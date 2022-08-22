@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local(''), url('./fonts/quicksand.woff2') format('woff2'),
+      url('./fonts/quicksand.woff') format('woff');
+  }
+
+  html,
+  body,
+  #__next {
+    @apply h-screen;
+  }
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+  a {
+    @apply text-blue-600 underline;
+  }
+}
