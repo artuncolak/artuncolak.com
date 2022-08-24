@@ -243,6 +243,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tabler/icons@npm:^1.85.0":
+  version: 1.85.0
+  resolution: "@tabler/icons@npm:1.85.0"
+  peerDependencies:
+    react: ^16.x || 17.x || 18.x
+    react-dom: ^16.x || 17.x || 18.x
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: c99889dba05007f6edcf5c2c410e2c71f5d38d5cef99b9d0347ee91a12c9a2fefbba7e3f65e1c5e6dd171a7b4540763af48bc5620badb3806146eb44364f821c
+  languageName: node
+  linkType: hard
+
 "@tootallnate/once@npm:2":
   version: 2.0.0
   resolution: "@tootallnate/once@npm:2.0.0"
@@ -661,6 +676,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "artuncolak.com@workspace:."
   dependencies:
+    "@tabler/icons": ^1.85.0
     "@types/node": 18.7.9
     "@types/prettier": ^2
     "@types/react": 18.0.17
@@ -677,6 +693,7 @@ __metadata:
     husky: ^8.0.1
     lint-staged: ^13.0.3
     next: 12.2.5
+    next-themes: ^0.2.0
     postcss: ^8.4.16
     prettier: ^2.7.1
     prettier-plugin-tailwindcss: ^0.1.13
@@ -2665,6 +2682,17 @@ __metadata:
   version: 0.6.3
   resolution: "negotiator@npm:0.6.3"
   checksum: b8ffeb1e262eff7968fc90a2b6767b04cfd9842582a9d0ece0af7049537266e7b2506dfb1d107a32f06dd849ab2aea834d5830f7f4d0e5cb7d36e1ae55d021d9
+  languageName: node
+  linkType: hard
+
+"next-themes@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "next-themes@npm:0.2.0"
+  peerDependencies:
+    next: "*"
+    react: "*"
+    react-dom: "*"
+  checksum: cee02db16bee471856557db9572ffa041b1d77254798e345fad09e1bd8b878e937cdacc73bb73c598eb3b042f20fff0201bd73d2de42e2061fa818585415e857
   languageName: node
   linkType: hard
 

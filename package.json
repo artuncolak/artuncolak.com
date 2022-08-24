@@ -11,8 +11,10 @@
     "pre-commit": "lint-staged"
   },
   "dependencies": {
+    "@tabler/icons": "^1.85.0",
     "classnames": "^2.3.1",
     "next": "12.2.5",
+    "next-themes": "^0.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },

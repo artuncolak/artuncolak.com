@@ -15,8 +15,21 @@
   html,
   body,
   #__next {
-    @apply h-screen;
+    @apply h-screen text-zinc-600 dark:bg-zinc-900 dark:text-zinc-400;
   }
+  #__next {
+    @apply flex flex-col;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-black dark:text-white;
+  }
+
   h1 {
     @apply text-2xl;
   }
@@ -25,8 +38,5 @@
   }
   h3 {
     @apply text-lg;
-  }
-  a {
-    @apply text-blue-600 underline;
   }
 }
