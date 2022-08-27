@@ -15,10 +15,10 @@
   html,
   body,
   #__next {
-    @apply h-screen text-zinc-600 dark:bg-zinc-900 dark:text-zinc-400;
+    @apply text-zinc-600 dark:bg-zinc-900 dark:text-zinc-400;
   }
   #__next {
-    @apply flex flex-col;
+    @apply flex min-h-screen flex-col;
   }
 
   h1,

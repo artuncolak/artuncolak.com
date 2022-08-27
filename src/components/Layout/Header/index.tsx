@@ -50,7 +50,7 @@ export default function Header() {
           {menuShown ? <IconX /> : <IconAlignLeft />}
         </button>
 
-        <h1 className="text-3xl font-bold">Artun Çolak</h1>
+        <h1 className="font-bold sm:text-3xl">Artun Çolak</h1>
 
         <nav className="hidden gap-3 sm:flex">
           {navLinks.map(({ url, label }) => (

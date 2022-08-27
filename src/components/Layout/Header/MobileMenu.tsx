@@ -38,7 +38,7 @@ export default function MobileMenu({ children, show }: Props) {
   return (
     <div
       className={classNames(
-        'fixed mt-16 flex w-full flex-col shadow backdrop-blur-md sm:hidden',
+        'fixed z-50 mt-16 flex w-full flex-col shadow backdrop-blur-md sm:hidden',
         'border-zinc-300 bg-white bg-opacity-70',
         'dark:border-zinc-700 dark:bg-zinc-900 dark:bg-opacity-90',
         {

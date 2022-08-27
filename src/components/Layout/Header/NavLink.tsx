@@ -15,7 +15,7 @@ export default function NavLink({ label, url }: Props) {
     <Link href={url}>
       <a
         className={cx(
-          'font-blo bg-opacity-80 px-5 py-5 dark:bg-opacity-20 sm:rounded sm:px-3 sm:py-2',
+          'bg-opacity-80 px-5 py-5 font-bold transition-colors dark:bg-opacity-20 sm:rounded sm:px-3 sm:py-2',
           {
             'bg-primary-100 text-primary-500 dark:bg-primary-900 dark:text-primary-200':
               active,
