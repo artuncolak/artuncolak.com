@@ -39,7 +39,7 @@ const socialLinks = [
 
 export default function ProfileSection() {
   return (
-    <div
+    <section
       className={classNames(
         'flex flex-grow items-center justify-center',
         height
@@ -87,6 +87,6 @@ export default function ProfileSection() {
           <SpotifyNowPlaying />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -40,7 +40,7 @@ export default function Header() {
     <>
       <header
         className={classNames(
-          'bg-white bg-opacity-70 dark:bg-zinc-900 dark:bg-opacity-90',
+          'z-50 bg-white bg-opacity-70 dark:bg-zinc-900 dark:bg-opacity-90',
           'fixed flex w-full items-center justify-between backdrop-blur-md',
           'h-16 px-3 sm:px-10 md:px-20 lg:px-56',
           { shadow: isScrolled }
