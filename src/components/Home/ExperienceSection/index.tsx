@@ -11,7 +11,7 @@ export default function ExperienceSection() {
   return (
     <Section label="Where I’ve Worked">
       <div className="flex flex-col gap-5 sm:flex-row sm:gap-20">
-        <div className="flex items-start overflow-x-auto sm:flex-col sm:overflow-x-visible">
+        <div className="flex items-start overflow-x-auto pb-3 sm:flex-col sm:overflow-x-visible sm:pb-0">
           {experiences.map(({ company }, index) => (
             <ExperienceTab
               key={index}

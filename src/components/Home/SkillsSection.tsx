@@ -1,6 +1,6 @@
 import skills from '@data/skills.json';
 
-import Section from '../Section';
+import Section from './Section';
 
 export default function SkillsSection() {
   return (

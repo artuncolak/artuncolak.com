@@ -12,6 +12,26 @@
       url('./fonts/quicksand.woff') format('woff');
   }
 
+  ::-webkit-scrollbar {
+    @apply h-2 w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-md bg-zinc-300 dark:bg-zinc-700;
+  }
+
+  ::-moz-selection {
+    @apply bg-primary-500 text-white dark:bg-primary-700;
+  }
+
+  ::selection {
+    @apply bg-primary-500 text-white dark:bg-primary-700;
+  }
+
   html,
   body,
   #__next {
