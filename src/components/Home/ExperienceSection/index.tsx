@@ -1,6 +1,7 @@
 import experiences from '@data/experiences.json';
 import { useState } from 'react';
 
+import Section from '../Section';
 import ExperienceDetails from './ExperienceDetails';
 import ExperienceTab from './ExperienceTab';
 
@@ -8,11 +9,9 @@ export default function ExperienceSection() {
   const [activeExperience, setActiveExperience] = useState(0);
 
   return (
-    <section className="mx-auto mt-32 lg:w-3/4">
-      <h1 className="text-4xl">Where I’ve Worked</h1>
-
-      <div className="my-16 flex gap-20">
-        <div className="flex min-w-max flex-col items-start">
+    <Section label="Where I’ve Worked">
+      <div className="flex flex-col gap-5 sm:flex-row sm:gap-20">
+        <div className="flex items-start overflow-x-auto sm:flex-col sm:overflow-x-visible">
           {experiences.map(({ company }, index) => (
             <ExperienceTab
               key={index}
@@ -25,6 +24,6 @@ export default function ExperienceSection() {
 
         <ExperienceDetails experience={experiences[activeExperience]} />
       </div>
-    </section>
+    </Section>
   );
 }

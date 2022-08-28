@@ -1,6 +1,6 @@
+import { NowPlaying } from '@lib/models';
 import { IconBrandSpotify } from '@tabler/icons';
 import axios from 'axios';
-import { NowPlaying } from 'lib/models';
 import { useEffect, useState } from 'react';
 
 export default function SpotifyNowPlaying() {
