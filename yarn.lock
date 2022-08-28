@@ -258,6 +258,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tailwindcss/forms@npm:^0.5.2":
+  version: 0.5.2
+  resolution: "@tailwindcss/forms@npm:0.5.2"
+  dependencies:
+    mini-svg-data-uri: ^1.2.3
+  peerDependencies:
+    tailwindcss: ">=3.0.0 || >= 3.0.0-alpha.1"
+  checksum: 3c4df23491d14b37d8cef88d0f3df80f92b684b801d59c23d600773a4ccac11353a555ca36bea68ae4a82134f9c030d1353c05890a5f0085c1c40c649f806640
+  languageName: node
+  linkType: hard
+
 "@tootallnate/once@npm:2":
   version: 2.0.0
   resolution: "@tootallnate/once@npm:2.0.0"
@@ -279,10 +290,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:*":
+  version: 18.7.13
+  resolution: "@types/node@npm:18.7.13"
+  checksum: 45431e7e89ecaf85c7d2c180d801c132a7c59e2f8ad578726b6d71cc74e3267c18f9ccdcad738bc0479790c078f0c79efb0e58da2c6be535c15995dbb19050c9
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:18.7.9":
   version: 18.7.9
   resolution: "@types/node@npm:18.7.9"
   checksum: 691ea1b734c0a39c4fe03c104fed18e0148bda6f2504dd341f84be8153d28e74d8114198d2d064ab7fdd2ece3ee16c60b78eea0101fb004f6e4595a631bc3839
+  languageName: node
+  linkType: hard
+
+"@types/nodemailer@npm:^6":
+  version: 6.4.5
+  resolution: "@types/nodemailer@npm:6.4.5"
+  dependencies:
+    "@types/node": "*"
+  checksum: ecbe34a6eb5559bdca58115b5c03ff048896e14dc7ea6426b3fdfc03484764eb9e4100fcff37b96d012543ca47238c973d0f5bbfb1ab5a2d1f1f25d494714c59
   languageName: node
   linkType: hard
 
@@ -677,7 +704,9 @@ __metadata:
   resolution: "artuncolak.com@workspace:."
   dependencies:
     "@tabler/icons": ^1.85.0
+    "@tailwindcss/forms": ^0.5.2
     "@types/node": 18.7.9
+    "@types/nodemailer": ^6
     "@types/prettier": ^2
     "@types/react": 18.0.17
     "@types/react-dom": 18.0.6
@@ -695,6 +724,7 @@ __metadata:
     lint-staged: ^13.0.3
     next: 12.2.5
     next-themes: ^0.2.0
+    nodemailer: ^6.7.8
     postcss: ^8.4.16
     prettier: ^2.7.1
     prettier-plugin-tailwindcss: ^0.1.13
@@ -2608,6 +2638,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mini-svg-data-uri@npm:^1.2.3":
+  version: 1.4.4
+  resolution: "mini-svg-data-uri@npm:1.4.4"
+  bin:
+    mini-svg-data-uri: cli.js
+  checksum: 997f1fbd8d59a70f03761e18626d335197a3479cb9d1ff75678e4b64b864d32a0b8fc18115eabde035e5299b8b4a354a78e57dd6ac10f9d604162a6170898d09
+  languageName: node
+  linkType: hard
+
 "minimatch@npm:^3.0.4, minimatch@npm:^3.1.1, minimatch@npm:^3.1.2":
   version: 3.1.2
   resolution: "minimatch@npm:3.1.2"
@@ -2860,6 +2899,13 @@ __metadata:
   version: 2.0.6
   resolution: "node-releases@npm:2.0.6"
   checksum: e86a926dc9fbb3b41b4c4a89d998afdf140e20a4e8dbe6c0a807f7b2948b42ea97d7fd3ad4868041487b6e9ee98409829c6e4d84a734a4215dff060a7fbeb4bf
+  languageName: node
+  linkType: hard
+
+"nodemailer@npm:^6.7.8":
+  version: 6.7.8
+  resolution: "nodemailer@npm:6.7.8"
+  checksum: 92d4a1d48813825989c7f5fc7cbcf5ba8d1a8acf8e10e420b4aa7670ade7abd0c543cc6cf8adf14e44c62552e26efb37b2a15a9af90a515fa90b40ffc71c433e
   languageName: node
   linkType: hard
 

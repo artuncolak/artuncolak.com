@@ -11,3 +11,9 @@ export interface Experience {
   endDate: string | null;
   descriptions: string[];
 }
+
+export interface ContactRequest {
+  name: string;
+  email: string;
+  message: string;
+}

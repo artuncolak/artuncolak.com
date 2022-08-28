@@ -51,5 +51,5 @@ module.exports = {
       sans: ['Quicksand', 'sans-serif']
     }
   },
-  plugins: []
+  plugins: [require('@tailwindcss/forms')]
 };
