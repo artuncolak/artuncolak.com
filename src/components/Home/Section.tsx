@@ -27,7 +27,7 @@ export default function Section({
       ) : null}
       {description ? <span>{description}</span> : null}
 
-      <div className="mt-16">{children}</div>
+      <div className="mt-8 sm:mt-16">{children}</div>
     </section>
   );
 }

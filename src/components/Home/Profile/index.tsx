@@ -45,14 +45,15 @@ export default function Profile() {
         height
       )}
     >
-      <div className="flex w-full flex-col gap-4 sm:gap-5 lg:w-3/5">
+      <div className="flex w-full flex-col gap-4 sm:gap-5">
         <div className="h-32 w-32 sm:h-52 sm:w-52">
           <Image
-            src="/media/image/upload/v1661358232/profile"
+            src="/media/profile.jpg"
             height={1}
             width={1}
             layout="responsive"
             alt="Artun Çolak"
+            sizes="50vw"
             className="rounded-full"
           />
         </div>
@@ -64,7 +65,7 @@ export default function Profile() {
         </span>
         <div className="flex gap-5">
           <a
-            href="https://drive.google.com/file/d/1G6A6b9RQmAI355vjWJWQNit-kNxbVXxd/view?usp=sharing"
+            href="/media/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded border px-2 py-1 text-sm transition-colors hover:bg-zinc-50 dark:hover:bg-zinc-800 sm:px-3 sm:py-2 sm:text-base"

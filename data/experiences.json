@@ -13,7 +13,10 @@
     ]
   },
   {
-    "company": { "name": "Intertech", "url": "https://www.intertech.com.tr" },
+    "company": {
+      "name": "Intertech",
+      "url": "https://www.intertech.com.tr"
+    },
     "position": "Software Developer",
     "startDate": "October 2020",
     "endDate": "January 2022",

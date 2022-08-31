@@ -1,3 +1,4 @@
+import Select from '@components/ui/Select';
 import experiences from '@data/experiences.json';
 import { useState } from 'react';
 
@@ -10,8 +11,8 @@ export default function ExperienceSection() {
 
   return (
     <Section label="Where I’ve Worked">
-      <div className="flex flex-col gap-5 sm:flex-row sm:gap-20">
-        <div className="flex items-start overflow-x-auto pb-3 sm:flex-col sm:overflow-x-visible sm:pb-0">
+      <div className="flex min-h-fit flex-col gap-5 sm:flex-row sm:gap-20">
+        <div className="hidden min-w-fit flex-col sm:flex">
           {experiences.map(({ company }, index) => (
             <ExperienceTab
               key={index}
@@ -21,6 +22,18 @@ export default function ExperienceSection() {
             />
           ))}
         </div>
+
+        <Select
+          className="sm:hidden"
+          value={activeExperience}
+          onChange={(e) => setActiveExperience(Number(e.target.value))}
+        >
+          {experiences.map(({ company }, index) => (
+            <option key={index} value={index}>
+              {company.name}
+            </option>
+          ))}
+        </Select>
 
         <ExperienceDetails experience={experiences[activeExperience]} />
       </div>

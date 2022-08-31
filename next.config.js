@@ -2,13 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  async rewrites() {
-    return [
-      {
-        source: '/media/:path*',
-        destination: 'https://res.cloudinary.com/artuncolak/:path*'
-      }
-    ];
+  images: {
+    domains: ['images.unsplash.com']
   }
 };
 

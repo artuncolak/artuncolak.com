@@ -1,23 +1,58 @@
-import classNames from 'classnames';
+import PostCard from '@components/Blog/PostCard';
+import Input from '@components/ui/Input';
+import { getAllPosts } from '@lib/blog';
+import { Post } from '@lib/models';
+import { GetStaticProps } from 'next';
 import Head from 'next/head';
+import { useState } from 'react';
 
-const height = `h-[calc(100vh-8rem)]`;
+interface Props {
+  posts: Post[];
+}
 
-export default function Blog() {
+export default function Blog({ posts }: Props) {
+  const [search, setSearch] = useState('');
+
+  const filteredPosts = posts.filter((post) =>
+    post.title.toLowerCase().includes(search.toLowerCase())
+  );
+
   return (
     <>
       <Head>
-        <title>Under Construction</title>
+        <title>Artun Çolak | Blog</title>
       </Head>
 
-      <div
-        className={classNames(
-          'flex flex-col items-center justify-center',
-          height
-        )}
-      >
-        <h1>Under Construction</h1>
+      <div className="mt-16">
+        <div className="flex flex-col gap-5">
+          <h1 className="text-4xl sm:text-5xl">Blog</h1>
+          <span className="text-lg sm:text-xl">
+            I write about software engineering and more!
+          </span>
+          <Input
+            type="text"
+            className="md:w-96"
+            placeholder="Search posts"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+          <hr className="border-zinc-200 dark:border-zinc-700" />
+        </div>
+
+        <div className="mt-5 flex flex-wrap justify-center gap-5">
+          {filteredPosts.length > 0 ? (
+            filteredPosts.map((post, index) => (
+              <PostCard key={index} post={post} />
+            ))
+          ) : (
+            <h1>No Posts Found.</h1>
+          )}
+        </div>
       </div>
     </>
   );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  return { props: { posts: JSON.parse(JSON.stringify(await getAllPosts())) } };
+};

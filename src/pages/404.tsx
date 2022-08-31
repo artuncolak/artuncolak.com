@@ -13,7 +13,7 @@ export default function NotFound() {
 
       <div
         className={classNames(
-          'mx-auto flex flex-col items-center justify-center gap-5 text-center md:w-3/4 lg:w-1/2',
+          'flex flex-col justify-center gap-5 text-center',
           height
         )}
       >
@@ -24,8 +24,8 @@ export default function NotFound() {
           You have found a secret place.
         </h1>
         <span className="mt-3">
-          Unfortunately, this is only a 404 page. You may have mistyped the
-          address, or the page has been moved to another URL.
+          Unfortunately, this is only a 404 page. <br /> You may have mistyped
+          the address, or the page has been moved to another URL.
         </span>
         <Link href="/">
           <a className="mt-10 text-lg text-primary-500 dark:text-primary-700">

@@ -13,7 +13,7 @@ export default function Home() {
 
       <Profile />
 
-      <div className="mx-auto mb-96 flex flex-col gap-96 lg:w-3/4">
+      <div className="mb-10 flex flex-col gap-80">
         <SkillsSection />
         <ExperienceSection />
         <ContactSection />

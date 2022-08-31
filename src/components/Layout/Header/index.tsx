@@ -41,27 +41,32 @@ export default function Header() {
       <header
         className={classNames(
           'z-50 bg-white bg-opacity-70 dark:bg-zinc-900 dark:bg-opacity-90',
-          'fixed flex w-full items-center justify-between backdrop-blur-md',
-          'h-16 px-3 sm:px-10 md:px-20 lg:px-56',
+          'fixed w-full backdrop-blur-md',
+          'h-16',
           { shadow: isScrolled }
         )}
       >
-        <button className="sm:hidden" onClick={() => setMenuShown(!menuShown)}>
-          {menuShown ? <IconX /> : <IconAlignLeft />}
-        </button>
+        <div className="mx-auto flex h-full max-w-5xl items-center justify-between px-3">
+          <button
+            className="sm:hidden"
+            onClick={() => setMenuShown(!menuShown)}
+          >
+            {menuShown ? <IconX /> : <IconAlignLeft />}
+          </button>
 
-        <h1 className="font-bold sm:text-3xl">Artun Çolak</h1>
+          <h1 className="font-bold sm:text-3xl">Artun Çolak</h1>
 
-        <nav className="hidden gap-3 sm:flex">
-          {navLinks.map(({ url, label }) => (
-            <NavLink key={url} url={url} label={label} />
-          ))}
+          <nav className="hidden gap-3 sm:flex">
+            {navLinks.map(({ url, label }) => (
+              <NavLink key={url} url={url} label={label} />
+            ))}
 
-          <ThemeToggle />
-        </nav>
+            <ThemeToggle />
+          </nav>
 
-        <div className="sm:hidden">
-          <ThemeToggle />
+          <div className="sm:hidden">
+            <ThemeToggle />
+          </div>
         </div>
       </header>
 

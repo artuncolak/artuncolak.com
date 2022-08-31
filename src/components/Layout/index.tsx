@@ -11,7 +11,9 @@ export default function Layout({ children }: Props) {
   return (
     <>
       <Header />
-      <main className="container mx-auto mt-16 flex-grow px-5">{children}</main>
+      <main className="mx-auto my-16 w-full max-w-5xl flex-grow px-3">
+        {children}
+      </main>
       <Footer />
     </>
   );

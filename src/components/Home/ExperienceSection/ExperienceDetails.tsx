@@ -8,7 +8,7 @@ export default function ExperienceDetails({ experience }: Props) {
   const { company, position, startDate, endDate, descriptions } = experience;
 
   return (
-    <div className="flex flex-col gap-3">
+    <div className={'flex flex-col gap-3'}>
       <h1 className="text-xl sm:text-2xl">
         {position}{' '}
         <span className="text-primary-500 dark:text-primary-700">
