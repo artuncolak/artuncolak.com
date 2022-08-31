@@ -1,9 +1,9 @@
 import PostCard from '@components/Blog/PostCard';
+import Page from '@components/Page';
 import Input from '@components/ui/Input';
 import { getAllPosts } from '@lib/blog';
 import { Post } from '@lib/models';
 import { GetStaticProps } from 'next';
-import Head from 'next/head';
 import { useState } from 'react';
 
 interface Props {
@@ -18,11 +18,7 @@ export default function Blog({ posts }: Props) {
   );
 
   return (
-    <>
-      <Head>
-        <title>Artun Çolak | Blog</title>
-      </Head>
-
+    <Page title="Artun Çolak | Blog">
       <div className="mt-16">
         <div className="flex flex-col gap-5">
           <h1 className="text-4xl sm:text-5xl">Blog</h1>
@@ -49,7 +45,7 @@ export default function Blog({ posts }: Props) {
           )}
         </div>
       </div>
-    </>
+    </Page>
   );
 }
 

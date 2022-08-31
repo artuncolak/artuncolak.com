@@ -1,16 +1,12 @@
+import Page from '@components/Page';
 import classNames from 'classnames';
-import Head from 'next/head';
 import Link from 'next/link';
 
 const height = `h-[calc(100vh-8rem)]`;
 
 export default function NotFound() {
   return (
-    <>
-      <Head>
-        <title>Not Found</title>
-      </Head>
-
+    <Page title="Not Found">
       <div
         className={classNames(
           'flex flex-col justify-center gap-5 text-center',
@@ -20,7 +16,7 @@ export default function NotFound() {
         <span className="text-[200px] font-bold leading-none text-zinc-300 dark:text-zinc-700 sm:text-[300px]">
           404
         </span>
-        <h1 className="text-3xl  font-semibold sm:text-5xl">
+        <h1 className="text-3xl font-semibold sm:text-5xl">
           You have found a secret place.
         </h1>
         <span className="mt-3">
@@ -33,6 +29,6 @@ export default function NotFound() {
           </a>
         </Link>
       </div>
-    </>
+    </Page>
   );
 }
