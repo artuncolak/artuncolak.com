@@ -3,7 +3,13 @@ import matter from 'gray-matter';
 
 import { Post } from './models';
 
-function getPostFromMarkdown(markdown: Buffer, withBody: boolean): Post {
+const POSTS_PATH = 'data/posts';
+
+async function readPostFromMarkdown(
+  fileName: string,
+  withBody: boolean
+): Promise<Post> {
+  const markdown = await fs.readFile(`${POSTS_PATH}/${fileName}`);
   const metadata = matter(markdown.toString());
 
   const { date, title, slug, preview, description } = metadata.data;
@@ -12,25 +18,30 @@ function getPostFromMarkdown(markdown: Buffer, withBody: boolean): Post {
   return { title, slug, description, date, preview, body };
 }
 
-export async function getAllPosts(): Promise<Post[]> {
-  const files = await fs.readdir('data/posts');
+async function readAllPostFileNames(): Promise<string[]> {
+  const fileNames = await fs.readdir(POSTS_PATH);
 
-  const promises = files.map((fileName) =>
-    fs.readFile(`data/posts/${fileName}`)
+  return fileNames;
+}
+
+export async function getAllPosts(withBody: boolean): Promise<Post[]> {
+  const fileNames = await readAllPostFileNames();
+
+  const promises = fileNames.map((fileName) =>
+    readPostFromMarkdown(fileName, withBody)
   );
 
   const results = await Promise.all(promises);
 
-  return results
-    .map((result) => getPostFromMarkdown(result, false))
-    .sort((a, b) => b.date.getTime() - a.date.getTime());
+  return results.sort((a, b) => b.date.getTime() - a.date.getTime());
 }
 
 export async function getPostBySlug(slug: string): Promise<Post | null> {
   try {
-    const file = await fs.readFile(`data/posts/${slug}.md`);
+    const posts = await getAllPosts(true);
+    const post = posts.find((post) => post.slug === slug);
 
-    return getPostFromMarkdown(file, true);
+    return post || null;
   } catch (error) {
     if (error instanceof Error) console.log(error.message);
 

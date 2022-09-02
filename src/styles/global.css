@@ -11,6 +11,13 @@
     src: local(''), url('./fonts/quicksand.woff2') format('woff2'),
       url('./fonts/quicksand.woff') format('woff');
   }
+  @font-face {
+    font-family: 'Jetbrains';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local(''), url('./fonts/jetbrainsmono.woff2') format('woff2');
+  }
 
   ::-webkit-scrollbar {
     @apply h-2 w-2;
@@ -59,4 +66,85 @@
   h3 {
     @apply text-lg;
   }
+}
+
+/* Syntax Highlighting */
+
+.prose pre code {
+  @apply rounded-none p-0;
+}
+
+[class*='language-'] .namespace {
+  @apply opacity-80;
+}
+
+.token.attr-name,
+.token.builtin,
+.token.class {
+  @apply text-yellow-500 dark:text-yellow-300;
+}
+
+.token.id,
+.token.important {
+  @apply font-bold text-purple-500 dark:text-purple-400;
+}
+
+.token.symbol,
+.token.keyword,
+.token.constant,
+.token.boolean,
+.token.atrule,
+.token.function {
+  @apply text-purple-500 dark:text-purple-400;
+}
+
+.token.unit,
+.token.number {
+  @apply text-red-400 dark:text-red-300;
+}
+
+.token.doctype,
+.token.prolog,
+.token.comment {
+  @apply text-zinc-400 dark:text-zinc-500;
+}
+
+.token.char,
+.token.cdata,
+.token.inserted,
+.token.punctuation,
+.token.operator,
+.token.property {
+  @apply text-blue-500 dark:text-blue-300;
+}
+
+.token.regex,
+.token.class-name,
+.token.hexcode {
+  @apply text-yellow-500 dark:text-yellow-300;
+}
+
+.token.string,
+.token.pseudo-element,
+.token.attribute,
+.token.attr-value,
+.token.pseudo-class {
+  @apply text-green-500 dark:text-green-400;
+}
+
+.language-css > code,
+.language-sass > code,
+.language-scss > code,
+.token.url,
+.token.variable,
+.token.tag,
+.token.entity,
+.token.deleted,
+.token.selector {
+  @apply text-red-500 dark:text-red-400;
+}
+
+.line-number::before {
+  content: attr(line);
+  @apply mr-5 dark:text-zinc-500 text-zinc-400
 }

@@ -50,5 +50,7 @@ export default function Blog({ posts }: Props) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  return { props: { posts: JSON.parse(JSON.stringify(await getAllPosts())) } };
+  return {
+    props: { posts: JSON.parse(JSON.stringify(await getAllPosts(false))) }
+  };
 };
