@@ -1,9 +1,9 @@
 ---
 title: Node ve Express ile TypeScript Kurulumu
 slug: node-ve-express-ile-typescript-kurulumu
-description: "NodeJS ve Express projesinde typescript kurulumu nasıl yapılır?"
+description: 'NodeJS ve Express projesinde typescript kurulumu nasıl yapılır?'
 date: 2021-03-17T13:28:29Z
-preview: ""
+preview:
 ---
 
 Öncelikle boş bir klasörde `npm init` komutuyla yeni bir NodeJS projesi oluşturduktan sonra başlayabiliriz.
@@ -60,15 +60,17 @@ Artık src klasörümüzde index.ts dosyamızı oluşturarak `npm run dev` komut
 **src/index.ts**
 
 ```ts
-import express, { Request, Response } from "express";
+import express, { Request, Response } from 'express';
 
 const app = express();
 
-app.get("/", (req: Request, res: Response) => {
-  res.send("Hello World");
+app.get('/', (req: Request, res: Response) => {
+  res.send('Hello World');
 });
 
-app.listen(5000, () => console.log("Server listening on http://localhost:5000"));
+app.listen(5000, () =>
+  console.log('Server listening on http://localhost:5000')
+);
 ```
 
 **Output**

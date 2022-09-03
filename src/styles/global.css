@@ -4,19 +4,20 @@
 
 @layer base {
   @font-face {
-    font-family: 'Quicksand';
+    font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: local(''), url('./fonts/quicksand.woff2') format('woff2'),
-      url('./fonts/quicksand.woff') format('woff');
+    src: local(''), url('./fonts/nunito.woff2') format('woff2'),
+      url('./fonts/nunito.woff') format('woff');
   }
   @font-face {
-    font-family: 'Jetbrains';
+    font-family: 'JetBrains Mono';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: local(''), url('./fonts/jetbrainsmono.woff2') format('woff2');
+    src: local(''), url('./fonts/jetbrains-mono.woff2') format('woff2'),
+      url('./fonts/jetbrains-mono.woff') format('woff');
   }
 
   ::-webkit-scrollbar {
@@ -42,7 +43,7 @@
   html,
   body,
   #__next {
-    @apply text-zinc-600 dark:bg-zinc-900 dark:text-zinc-400;
+    @apply text-zinc-600 antialiased dark:bg-zinc-900 dark:text-zinc-400;
   }
   #__next {
     @apply flex min-h-screen flex-col;
@@ -71,6 +72,7 @@
 /* Syntax Highlighting */
 
 .prose pre code {
+  font-variant-ligatures: none;
   @apply rounded-none p-0;
 }
 
@@ -146,5 +148,5 @@
 
 .line-number::before {
   content: attr(line);
-  @apply mr-5 dark:text-zinc-500 text-zinc-400
+  @apply mr-5 text-zinc-400 dark:text-zinc-500;
 }

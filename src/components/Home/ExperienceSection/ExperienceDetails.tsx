@@ -9,7 +9,7 @@ export default function ExperienceDetails({ experience }: Props) {
 
   return (
     <div className={'flex flex-col gap-3'}>
-      <h1 className="text-xl sm:text-2xl">
+      <h1 className="text-xl font-bold sm:text-2xl">
         {position}{' '}
         <span className="text-primary-500 dark:text-primary-700">
           @{' '}

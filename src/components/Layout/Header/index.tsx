@@ -40,7 +40,7 @@ export default function Header() {
     <>
       <header
         className={classNames(
-          'z-50 bg-white bg-opacity-70 dark:bg-zinc-900 dark:bg-opacity-90',
+          'z-50 bg-white bg-opacity-70 transition-shadow dark:bg-zinc-900 dark:bg-opacity-90',
           'fixed w-full backdrop-blur-md',
           'h-16',
           { shadow: isScrolled }
@@ -54,7 +54,7 @@ export default function Header() {
             {menuShown ? <IconX /> : <IconAlignLeft />}
           </button>
 
-          <h1 className="font-bold sm:text-3xl">Artun Çolak</h1>
+          <h1 className="sm:text-3xl">Artun Çolak</h1>
 
           <nav className="hidden gap-3 sm:flex">
             {navLinks.map(({ url, label }) => (
@@ -72,7 +72,12 @@ export default function Header() {
 
       <MobileMenu show={menuShown}>
         {navLinks.map(({ url, label }) => (
-          <NavLink key={url} url={url} label={label} />
+          <NavLink
+            key={url}
+            url={url}
+            label={label}
+            onClick={() => setMenuShown(false)}
+          />
         ))}
       </MobileMenu>
     </>

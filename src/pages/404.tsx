@@ -6,7 +6,7 @@ const height = `h-[calc(100vh-8rem)]`;
 
 export default function NotFound() {
   return (
-    <Page title="Not Found">
+    <Page title="404 - Artun Çolak">
       <div
         className={classNames(
           'flex flex-col justify-center gap-5 text-center',

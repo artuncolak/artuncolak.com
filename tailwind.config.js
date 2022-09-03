@@ -55,8 +55,8 @@ module.exports = {
       }
     },
     fontFamily: {
-      sans: ['Quicksand', 'sans-serif'],
-      mono: ['Jetbrains', 'monospace']
+      sans: ['Nunito', 'sans-serif'],
+      mono: ['JetBrains Mono', 'monospace']
     }
   },
   plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')]

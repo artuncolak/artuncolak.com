@@ -6,7 +6,7 @@ import Page from '@components/Page';
 
 export default function Home() {
   return (
-    <Page title="Artun Çolak">
+    <Page>
       <Profile />
 
       <div className="mb-10 flex flex-col gap-80">

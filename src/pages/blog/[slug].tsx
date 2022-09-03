@@ -3,7 +3,6 @@ import Comments from '@components/Blog/Comments';
 import Page from '@components/Page';
 import { getAllPosts, getPostBySlug } from '@lib/blog';
 import { Post } from '@lib/models';
-import classNames from 'classnames';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Image from 'next/image';
 import readingTime from 'reading-time';
@@ -16,19 +15,39 @@ interface Props {
 export default function PostPage({ post, readingTime }: Props) {
   if (!post) return null;
 
-  const { title, description, preview, body } = post;
+  const { title, preview, description, date, body } = post;
 
   return (
-    <Page title={title}>
+    <Page
+      title={`${title} - Artun Çolak`}
+      image={preview}
+      description={description}
+      date={new Date(date).toISOString()}
+      type="article"
+    >
       <div className="my-16">
-        <h1 className="mb-3 text-4xl sm:text-5xl">{title}</h1>
+        <h1 className="mb-3 text-4xl font-semibold sm:text-5xl">{title}</h1>
 
-        <span className="flex flex-col text-lg sm:text-xl md:flex-row">
-          {description ? <span>{description}</span> : null}
-          <span className={classNames({ 'md:ml-auto': description })}>
-            {readingTime}
-          </span>
-        </span>
+        <div className="flex w-full flex-col text-lg sm:items-center md:flex-row">
+          <div className="flex items-center gap-3">
+            <Image
+              src="/media/profile.jpg"
+              alt="Artun Çolak"
+              width={24}
+              height={24}
+              className="rounded-full"
+            />
+            <span>
+              Artun Çolak /{' '}
+              {new Date(date).toLocaleDateString(undefined, {
+                month: 'short',
+                day: '2-digit',
+                year: 'numeric'
+              })}
+            </span>
+          </div>
+          <span className="md:ml-auto">{readingTime}</span>
+        </div>
 
         {preview ? (
           <div className="relative mt-16 w-full">
