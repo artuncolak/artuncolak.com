@@ -1,3 +1,18 @@
+export const ENVIRONMENT = process.env.NODE_ENV;
+
+//Website
+export const WEBSITE_DOMAIN = String(process.env.NEXT_PUBLIC_WEBSITE_DOMAIN);
+
+//Giscus
+export const GISCUS_REPO = String(process.env.NEXT_PUBLIC_GISCUS_REPO);
+export const GISCUS_REPO_ID = String(process.env.NEXT_PUBLIC_GISCUS_REPO_ID);
+export const GISCUS_CATEGORY_ID = String(
+  process.env.NEXT_PUBLIC_GISCUS_CATEGORY_ID
+);
+
+//Splitbee
+export const SPLITBEE_TOKEN = String(process.env.NEXT_PUBLIC_SPLITBEE_TOKEN);
+
 //Spotify
 export const SPOTIFY_CLIENT_ID = String(process.env.SPOTIFY_CLIENT_ID);
 export const SPOTIFY_CLIENT_SECRET = String(process.env.SPOTIFY_CLIENT_SECRET);

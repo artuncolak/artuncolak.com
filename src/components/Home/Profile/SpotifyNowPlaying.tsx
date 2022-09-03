@@ -27,7 +27,7 @@ export default function SpotifyNowPlaying() {
       >
         <IconBrandSpotify color="#1DB954" className="sm:h-8 sm:w-8" />
       </a>
-      <span className="text-sm font-bold text-black dark:text-white sm:text-base">
+      <span className="text-sm font-semibold text-black dark:text-white sm:text-base">
         {!nowPlaying || !nowPlaying.isPlaying ? 'Not Playing' : nowPlaying.name}
 
         <span className="font-normal text-zinc-500">

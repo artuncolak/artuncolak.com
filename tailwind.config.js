@@ -45,11 +45,19 @@ module.exports = {
             opacity: '1'
           }
         }
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            pre: null
+          }
+        }
       }
     },
     fontFamily: {
-      sans: ['Quicksand', 'sans-serif']
+      sans: ['Nunito', 'sans-serif'],
+      mono: ['JetBrains Mono', 'monospace']
     }
   },
-  plugins: [require('@tailwindcss/forms')]
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')]
 };
