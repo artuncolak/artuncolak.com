@@ -48,7 +48,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@giscus/react@npm:^2.2.0":
+"@giscus/react@npm:2.2.0":
   version: 2.2.0
   resolution: "@giscus/react@npm:2.2.0"
   dependencies:
@@ -260,7 +260,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@splitbee/web@npm:^0.3.0":
+"@splitbee/web@npm:0.3.0":
   version: 0.3.0
   resolution: "@splitbee/web@npm:0.3.0"
   checksum: 2714124ced793af98cd869f46e51f1ddeb140ec2e081fb6d97a512f48797a3a8a219fd7cba1efa436aa0eba76e2d59aad254064d885743eccc5188fd3f143a78
@@ -276,7 +276,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tabler/icons@npm:^1.92.0":
+"@tabler/icons@npm:1.92.0":
   version: 1.92.0
   resolution: "@tabler/icons@npm:1.92.0"
   peerDependencies:
@@ -291,7 +291,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/forms@npm:^0.5.3":
+"@tailwindcss/forms@npm:0.5.3":
   version: 0.5.3
   resolution: "@tailwindcss/forms@npm:0.5.3"
   dependencies:
@@ -302,7 +302,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/typography@npm:^0.5.7":
+"@tailwindcss/typography@npm:0.5.7":
   version: 0.5.7
   resolution: "@tailwindcss/typography@npm:0.5.7"
   dependencies:
@@ -392,7 +392,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/nodemailer@npm:^6.4.5":
+"@types/nodemailer@npm:6.4.5":
   version: 6.4.5
   resolution: "@types/nodemailer@npm:6.4.5"
   dependencies:
@@ -408,7 +408,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/prettier@npm:^2.7.0":
+"@types/prettier@npm:2.7.0":
   version: 2.7.0
   resolution: "@types/prettier@npm:2.7.0"
   checksum: bf5d0c7c1270909b39399539ac106d20ddaa85fe92eb1d59922dc99159604b4f8d5e41b0045fb29c8011585cf5bca2350b7441ef3d9816c08bd0e10ebd4b31d4
@@ -467,7 +467,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/sharp@npm:^0.30.5":
+"@types/sharp@npm:0.30.5":
   version: 0.30.5
   resolution: "@types/sharp@npm:0.30.5"
   dependencies:
@@ -490,7 +490,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^5.36.1":
+"@typescript-eslint/eslint-plugin@npm:5.36.1":
   version: 5.36.1
   resolution: "@typescript-eslint/eslint-plugin@npm:5.36.1"
   dependencies:
@@ -513,6 +513,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@typescript-eslint/parser@npm:5.36.1":
+  version: 5.36.1
+  resolution: "@typescript-eslint/parser@npm:5.36.1"
+  dependencies:
+    "@typescript-eslint/scope-manager": 5.36.1
+    "@typescript-eslint/types": 5.36.1
+    "@typescript-eslint/typescript-estree": 5.36.1
+    debug: ^4.3.4
+  peerDependencies:
+    eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 0f0f94e56ae1d55b6e7223ce5a2b0c93e5cc082ef2951a2b24ae4b22bb8ffbeb90d2d16682bfa8bc972ba2c7fb4703aedd79b7dbd09bcee397e1ab90d11506d9
+  languageName: node
+  linkType: hard
+
 "@typescript-eslint/parser@npm:^5.21.0":
   version: 5.33.1
   resolution: "@typescript-eslint/parser@npm:5.33.1"
@@ -527,23 +544,6 @@ __metadata:
     typescript:
       optional: true
   checksum: fb3a4e000ce6d9583656fc3b3fb80f127a0ec1b7c3872ea469164516d993a588859ded4ec1338e6bbf2151168380d8aa29ec31027af23b50f5107949f8e7b438
-  languageName: node
-  linkType: hard
-
-"@typescript-eslint/parser@npm:^5.36.1":
-  version: 5.36.1
-  resolution: "@typescript-eslint/parser@npm:5.36.1"
-  dependencies:
-    "@typescript-eslint/scope-manager": 5.36.1
-    "@typescript-eslint/types": 5.36.1
-    "@typescript-eslint/typescript-estree": 5.36.1
-    debug: ^4.3.4
-  peerDependencies:
-    eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-  checksum: 0f0f94e56ae1d55b6e7223ce5a2b0c93e5cc082ef2951a2b24ae4b22bb8ffbeb90d2d16682bfa8bc972ba2c7fb4703aedd79b7dbd09bcee397e1ab90d11506d9
   languageName: node
   linkType: hard
 
@@ -911,44 +911,44 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "artuncolak.com@workspace:."
   dependencies:
-    "@giscus/react": ^2.2.0
-    "@splitbee/web": ^0.3.0
-    "@tabler/icons": ^1.92.0
-    "@tailwindcss/forms": ^0.5.3
-    "@tailwindcss/typography": ^0.5.7
+    "@giscus/react": 2.2.0
+    "@splitbee/web": 0.3.0
+    "@tabler/icons": 1.92.0
+    "@tailwindcss/forms": 0.5.3
+    "@tailwindcss/typography": 0.5.7
     "@types/node": 18.7.14
-    "@types/nodemailer": ^6.4.5
-    "@types/prettier": ^2.7.0
+    "@types/nodemailer": 6.4.5
+    "@types/prettier": 2.7.0
     "@types/react": 18.0.18
     "@types/react-dom": 18.0.6
-    "@types/sharp": ^0.30.5
-    "@typescript-eslint/eslint-plugin": ^5.36.1
-    "@typescript-eslint/parser": ^5.36.1
-    autoprefixer: ^10.4.8
-    axios: ^0.27.2
-    classnames: ^2.3.1
+    "@types/sharp": 0.30.5
+    "@typescript-eslint/eslint-plugin": 5.36.1
+    "@typescript-eslint/parser": 5.36.1
+    autoprefixer: 10.4.8
+    axios: 0.27.2
+    classnames: 2.3.1
     eslint: 8.23.0
     eslint-config-next: 12.2.5
-    eslint-config-prettier: ^8.5.0
-    eslint-plugin-prettier: ^4.2.1
-    eslint-plugin-simple-import-sort: ^8.0.0
-    gray-matter: ^4.0.3
-    husky: ^8.0.1
-    lint-staged: ^13.0.3
+    eslint-config-prettier: 8.5.0
+    eslint-plugin-prettier: 4.2.1
+    eslint-plugin-simple-import-sort: 8.0.0
+    gray-matter: 4.0.3
+    husky: 8.0.1
+    lint-staged: 13.0.3
     next: 12.2.5
-    next-themes: ^0.2.0
-    nodemailer: ^6.7.8
-    postcss: ^8.4.16
-    prettier: ^2.7.1
-    prettier-plugin-tailwindcss: ^0.1.13
+    next-themes: 0.2.0
+    nodemailer: 6.7.8
+    postcss: 8.4.16
+    prettier: 2.7.1
+    prettier-plugin-tailwindcss: 0.1.13
     react: 18.2.0
     react-dom: 18.2.0
-    react-markdown: ^8.0.3
-    reading-time: ^1.5.0
-    rehype-prism-plus: ^1.5.0
-    remark-gfm: ^3.0.1
-    sharp: ^0.30.7
-    tailwindcss: ^3.1.8
+    react-markdown: 8.0.3
+    reading-time: 1.5.0
+    rehype-prism-plus: 1.5.0
+    remark-gfm: 3.0.1
+    sharp: 0.30.7
+    tailwindcss: 3.1.8
     typescript: 4.8.2
   languageName: unknown
   linkType: soft
@@ -974,7 +974,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:^10.4.8":
+"autoprefixer@npm:10.4.8":
   version: 10.4.8
   resolution: "autoprefixer@npm:10.4.8"
   dependencies:
@@ -999,7 +999,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^0.27.2":
+"axios@npm:0.27.2":
   version: 0.27.2
   resolution: "axios@npm:0.27.2"
   dependencies:
@@ -1235,7 +1235,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"classnames@npm:^2.3.1":
+"classnames@npm:2.3.1":
   version: 2.3.1
   resolution: "classnames@npm:2.3.1"
   checksum: 14db8889d56c267a591f08b0834989fe542d47fac659af5a539e110cc4266694e8de86e4e3bbd271157dbd831361310a8293e0167141e80b0f03a0f175c80960
@@ -1738,7 +1738,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^8.5.0":
+"eslint-config-prettier@npm:8.5.0":
   version: 8.5.0
   resolution: "eslint-config-prettier@npm:8.5.0"
   peerDependencies:
@@ -1833,7 +1833,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:^4.2.1":
+"eslint-plugin-prettier@npm:4.2.1":
   version: 4.2.1
   resolution: "eslint-plugin-prettier@npm:4.2.1"
   dependencies:
@@ -1881,7 +1881,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-simple-import-sort@npm:^8.0.0":
+"eslint-plugin-simple-import-sort@npm:8.0.0":
   version: 8.0.0
   resolution: "eslint-plugin-simple-import-sort@npm:8.0.0"
   peerDependencies:
@@ -2438,7 +2438,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gray-matter@npm:^4.0.3":
+"gray-matter@npm:4.0.3":
   version: 4.0.3
   resolution: "gray-matter@npm:4.0.3"
   dependencies:
@@ -2603,7 +2603,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:^8.0.1":
+"husky@npm:8.0.1":
   version: 8.0.1
   resolution: "husky@npm:8.0.1"
   bin:
@@ -3066,7 +3066,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^13.0.3":
+"lint-staged@npm:13.0.3":
   version: 13.0.3
   resolution: "lint-staged@npm:13.0.3"
   dependencies:
@@ -3976,7 +3976,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-themes@npm:^0.2.0":
+"next-themes@npm:0.2.0":
   version: 0.2.0
   resolution: "next-themes@npm:0.2.0"
   peerDependencies:
@@ -4101,7 +4101,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nodemailer@npm:^6.7.8":
+"nodemailer@npm:6.7.8":
   version: 6.7.8
   resolution: "nodemailer@npm:6.7.8"
   checksum: 92d4a1d48813825989c7f5fc7cbcf5ba8d1a8acf8e10e420b4aa7670ade7abd0c543cc6cf8adf14e44c62552e26efb37b2a15a9af90a515fa90b40ffc71c433e
@@ -4497,7 +4497,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.14, postcss@npm:^8.4.16":
+"postcss@npm:8.4.16, postcss@npm:^8.4.14":
   version: 8.4.16
   resolution: "postcss@npm:8.4.16"
   dependencies:
@@ -4546,7 +4546,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-tailwindcss@npm:^0.1.13":
+"prettier-plugin-tailwindcss@npm:0.1.13":
   version: 0.1.13
   resolution: "prettier-plugin-tailwindcss@npm:0.1.13"
   peerDependencies:
@@ -4555,7 +4555,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.7.1":
+"prettier@npm:2.7.1":
   version: 2.7.1
   resolution: "prettier@npm:2.7.1"
   bin:
@@ -4670,7 +4670,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-markdown@npm:^8.0.3":
+"react-markdown@npm:8.0.3":
   version: 8.0.3
   resolution: "react-markdown@npm:8.0.3"
   dependencies:
@@ -4734,7 +4734,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"reading-time@npm:^1.5.0":
+"reading-time@npm:1.5.0":
   version: 1.5.0
   resolution: "reading-time@npm:1.5.0"
   checksum: e27bc5a70ba0f4ac337896b18531b914d38f4bee67cbad48029d0c11dd0a7a847b2a6bba895ab7ce2ad3e7ecb86912bdc477d8fa2d48405a3deda964be54d09b
@@ -4790,7 +4790,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rehype-prism-plus@npm:^1.5.0":
+"rehype-prism-plus@npm:1.5.0":
   version: 1.5.0
   resolution: "rehype-prism-plus@npm:1.5.0"
   dependencies:
@@ -4804,7 +4804,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"remark-gfm@npm:^3.0.1":
+"remark-gfm@npm:3.0.1":
   version: 3.0.1
   resolution: "remark-gfm@npm:3.0.1"
   dependencies:
@@ -5027,7 +5027,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sharp@npm:^0.30.7":
+"sharp@npm:0.30.7":
   version: 0.30.7
   resolution: "sharp@npm:0.30.7"
   dependencies:
@@ -5370,7 +5370,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.1.8":
+"tailwindcss@npm:3.1.8":
   version: 3.1.8
   resolution: "tailwindcss@npm:3.1.8"
   dependencies:
@@ -5562,11 +5562,11 @@ __metadata:
 
 "typescript@patch:typescript@4.8.2#~builtin<compat/typescript>":
   version: 4.8.2
-  resolution: "typescript@patch:typescript@npm%3A4.8.2#~builtin<compat/typescript>::version=4.8.2&hash=f456af"
+  resolution: "typescript@patch:typescript@npm%3A4.8.2#~builtin<compat/typescript>::version=4.8.2&hash=a1c5e5"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 6f49363af8af2fe480da1d5fa68712644438785208b06690a3cbe5e7365fd652c3a0f1e587bc8684d78fb69de3dde4de185c0bad7bb4f3664ddfc813ce8caad6
+  checksum: 5cb0f02f414f5405f4b0e7ee1fd7fa9177b6a8783c9017b6cad85f56ce4c4f93e0e6f2ce37e863cb597d44227cd009474c9fbd85bf7a50004e5557426cb58079
   languageName: node
   linkType: hard
 
