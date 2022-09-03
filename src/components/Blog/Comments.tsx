@@ -1,10 +1,10 @@
 import Giscus from '@giscus/react';
+import { GISCUS_CATEGORY_ID, GISCUS_REPO, GISCUS_REPO_ID } from '@lib/config';
 import classNames from 'classnames';
 import { useTheme } from 'next-themes';
 
 export default function Comments() {
   const { theme } = useTheme();
-  const isProduction = process.env.NODE_ENV === 'production';
 
   return (
     <div className="mt-16">
@@ -17,22 +17,20 @@ export default function Comments() {
       >
         Leave a comment
       </h1>
-      {isProduction && (
-        <Giscus
-          repo="artuncolak/artuncolak.com-comments"
-          repoId="R_kgDOH7A82w"
-          category="Announcements"
-          categoryId="DIC_kwDOH7A8284CRLXk"
-          mapping="pathname"
-          strict="0"
-          reactionsEnabled="1"
-          emitMetadata="0"
-          inputPosition="top"
-          theme={theme === 'light' ? 'light' : 'transparent_dark'}
-          lang="en"
-          loading="lazy"
-        />
-      )}
+      <Giscus
+        repo={`artuncolak/${GISCUS_REPO}`}
+        repoId={GISCUS_REPO_ID}
+        category="Announcements"
+        categoryId={GISCUS_CATEGORY_ID}
+        mapping="pathname"
+        strict="0"
+        reactionsEnabled="1"
+        emitMetadata="0"
+        inputPosition="top"
+        theme={theme === 'light' ? 'light' : 'transparent_dark'}
+        lang="en"
+        loading="lazy"
+      />
     </div>
   );
 }

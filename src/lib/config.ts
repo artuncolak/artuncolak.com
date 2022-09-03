@@ -5,7 +5,7 @@ export const WEBSITE_DOMAIN = String(process.env.NEXT_PUBLIC_WEBSITE_DOMAIN);
 export const GISCUS_REPO = String(process.env.NEXT_PUBLIC_GISCUS_REPO);
 export const GISCUS_REPO_ID = String(process.env.NEXT_PUBLIC_GISCUS_REPO_ID);
 export const GISCUS_CATEGORY_ID = String(
-  process.env.NEXT_PUBLIC_GISCUS_REPO_CATEGORY_ID
+  process.env.NEXT_PUBLIC_GISCUS_CATEGORY_ID
 );
 
 //Spotify

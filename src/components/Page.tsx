@@ -28,10 +28,11 @@ export default function Page({ children, ...customMeta }: Props) {
 
   const url = `${WEBSITE_DOMAIN}${router.asPath}`;
 
-  const metaImage =
-    image.startsWith('http') || image.startsWith('https')
+  const metaImage = image
+    ? image.startsWith('http') || image.startsWith('https')
       ? image
-      : `${WEBSITE_DOMAIN}${image}`;
+      : `${WEBSITE_DOMAIN}${image}`
+    : '';
 
   return (
     <>

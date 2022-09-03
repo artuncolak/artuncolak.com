@@ -28,7 +28,7 @@ export default function PostPage({ post, readingTime }: Props) {
       <div className="my-16">
         <h1 className="mb-3 text-4xl font-semibold sm:text-5xl">{title}</h1>
 
-        <div className="flex w-full flex-col text-lg sm:items-center md:flex-row">
+        <div className="flex w-full flex-col text-lg sm:flex-row sm:items-center">
           <div className="flex items-center gap-3">
             <Image
               src="/media/profile.jpg"
@@ -46,7 +46,7 @@ export default function PostPage({ post, readingTime }: Props) {
               })}
             </span>
           </div>
-          <span className="md:ml-auto">{readingTime}</span>
+          <span className="sm:ml-auto">{readingTime}</span>
         </div>
 
         {preview ? (
