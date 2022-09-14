@@ -8,7 +8,7 @@ preview: https://images.unsplash.com/photo-1633989464081-16ccd31287a1?ixlib=rb-1
 
 #### Merhaba, dünya 👋
 
-Bir yazılımcı olarak ilk paylaşımımın hello world olmamasına gönlüm izin verlmezdi 😄.
+Bir yazılımcı olarak ilk paylaşımımın hello world olmamasına gönlüm izin vermezdi 😄.
 
 Sonunda uzun süredir açmayı düşündüğüm blogumu açtım. Bu blogta frontend ve backend teknolojileri hakkında yazılar yazmaya çalışacağım.
 Şimdiden iyi okumalar 🙂.
