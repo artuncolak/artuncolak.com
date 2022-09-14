@@ -25,7 +25,7 @@ export default function ContactSection() {
   return (
     <Section label="Contact">
       <form
-        className="mx-auto flex flex-col gap-5 sm:w-3/4"
+        className="flex flex-col gap-5"
         onSubmit={(e) => {
           e.preventDefault();
           handleSubmit();

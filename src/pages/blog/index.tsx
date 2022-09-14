@@ -27,7 +27,7 @@ export default function Blog({ posts }: Props) {
           </span>
           <Input
             type="text"
-            className="md:w-96"
+            className=""
             placeholder="Search posts"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
@@ -35,13 +35,13 @@ export default function Blog({ posts }: Props) {
           <hr className="border-zinc-200 dark:border-zinc-700" />
         </div>
 
-        <div className="mt-5 flex flex-wrap justify-center gap-5">
+        <div className="mt-5 flex flex-col justify-center gap-5">
           {filteredPosts.length > 0 ? (
             filteredPosts.map((post, index) => (
               <PostCard key={index} post={post} />
             ))
           ) : (
-            <h1>No Posts Found.</h1>
+            <h1 className="text-center">No Posts Found.</h1>
           )}
         </div>
       </div>
