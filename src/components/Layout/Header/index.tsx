@@ -46,7 +46,7 @@ export default function Header() {
           { shadow: isScrolled }
         )}
       >
-        <div className="mx-auto flex h-full max-w-5xl items-center justify-between px-3">
+        <div className="mx-auto flex h-full max-w-3xl items-center justify-between px-3">
           <button
             className="sm:hidden"
             onClick={() => setMenuShown(!menuShown)}

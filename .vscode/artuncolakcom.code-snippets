@@ -1,0 +1,33 @@
+{
+  "Blog Post Frontmatter": {
+    "prefix": "Blog Post Frontmatter",
+    "body": [
+      "---",
+      "title: $1",
+      "slug: $2",
+      "description: $3",
+      "date: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}T${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}Z",
+      "preview: $4",
+      "---\n\n"
+    ],
+    "description": "Insert Blog Post Frontmatter"
+  },
+  "Experience": {
+    "prefix": "Experience",
+    "body": [
+      "  {",
+      "    \"company\": {",
+      "      \"name\": $1,",
+      "      \"url\": $2",
+      "    },",
+      "    \"position\": $3,",
+      "    \"startDate\": $4,",
+      "    \"endDate\": $5,",
+      "    \"descriptions\": [",
+      "      $6",
+      "    ]",
+      "  }"
+    ],
+    "description": "Insert Experience Data"
+  }
+}
