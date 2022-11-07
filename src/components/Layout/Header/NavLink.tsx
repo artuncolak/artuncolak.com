@@ -13,20 +13,19 @@ export default function NavLink({ label, url, onClick }: Props) {
   const active = pathname === url;
 
   return (
-    <Link href={url}>
-      <a
-        className={cx(
-          'bg-opacity-80 px-5 py-5 transition-colors dark:bg-opacity-20 sm:rounded sm:px-3 sm:py-2',
-          {
-            'bg-primary-100 text-primary-500 dark:bg-primary-900 dark:text-primary-200':
-              active,
-            'hover:bg-zinc-50 dark:hover:bg-zinc-800': !active
-          }
-        )}
-        onClick={onClick}
-      >
-        {label}
-      </a>
+    <Link
+      href={url}
+      className={cx(
+        'bg-opacity-80 px-5 py-5 transition-colors dark:bg-opacity-20 sm:rounded sm:px-3 sm:py-2',
+        {
+          'bg-primary-100 text-primary-500 dark:bg-primary-900 dark:text-primary-200':
+            active,
+          'hover:bg-zinc-50 dark:hover:bg-zinc-800': !active
+        }
+      )}
+      onClick={onClick}
+    >
+      {label}
     </Link>
   );
 }

@@ -23,10 +23,11 @@ export default function NotFound() {
           Unfortunately, this is only a 404 page. <br /> You may have mistyped
           the address, or the page has been moved to another URL.
         </span>
-        <Link href="/">
-          <a className="mt-10 text-lg text-primary-500 dark:text-primary-700">
-            Take me back to home page
-          </a>
+        <Link
+          href="/"
+          className="mt-10 text-lg text-primary-500 dark:text-primary-700"
+        >
+          Take me back to home page
         </Link>
       </div>
     </Page>
