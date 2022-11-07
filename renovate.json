@@ -13,6 +13,6 @@
   "lockFileMaintenance": {
     "enabled": false
   },
-  "schedule": ["before 3am on the first day of the month"],
+  "schedule": ["every 3 months on the first day of the month"],
   "extends": ["config:base"]
 }

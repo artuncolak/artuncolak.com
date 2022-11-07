@@ -72,10 +72,11 @@ export default function Profile() {
           >
             Resume
           </a>
-          <Link href="/blog">
-            <a className="rounded border px-2 py-1 text-sm transition-colors hover:bg-zinc-50 dark:hover:bg-zinc-800 sm:text-base">
-              Blog
-            </a>
+          <Link
+            href="/blog"
+            className="rounded border px-2 py-1 text-sm transition-colors hover:bg-zinc-50 dark:hover:bg-zinc-800 sm:text-base"
+          >
+            Blog
           </Link>
         </div>
         <div className="flex flex-col gap-4 sm:gap-5 xl:flex-row xl:items-center">
