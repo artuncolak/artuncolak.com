@@ -64,14 +64,6 @@ export default function Profile() {
           elegant and efficent code.
         </span>
         <div className="flex gap-5">
-          <a
-            href="/media/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded border px-2 py-1 text-sm transition-colors hover:bg-zinc-50 dark:hover:bg-zinc-800 sm:text-base"
-          >
-            Resume
-          </a>
           <Link
             href="/blog"
             className="rounded border px-2 py-1 text-sm transition-colors hover:bg-zinc-50 dark:hover:bg-zinc-800 sm:text-base"
