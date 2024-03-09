@@ -1,4 +1,4 @@
-import { IconAlignLeft, IconX } from '@tabler/icons';
+import { IconAlignLeft, IconX } from '@tabler/icons-react';
 import classNames from 'classnames';
 import { useEffect, useState } from 'react';
 

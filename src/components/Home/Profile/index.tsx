@@ -4,13 +4,12 @@ import {
   IconBrandLinkedin,
   IconBrandTwitter,
   IconMail
-} from '@tabler/icons';
+} from '@tabler/icons-react';
 import classNames from 'classnames';
 import Image from 'next/image';
 import Link from 'next/link';
 
 import SocialIcon from './SocialIcon';
-import SpotifyNowPlaying from './SpotifyNowPlaying';
 
 const height = `h-[calc(100vh-8rem)]`;
 
@@ -77,8 +76,6 @@ export default function Profile() {
               <SocialIcon key={url} url={url} icon={icon} />
             ))}
           </div>
-
-          <SpotifyNowPlaying />
         </div>
       </div>
     </div>

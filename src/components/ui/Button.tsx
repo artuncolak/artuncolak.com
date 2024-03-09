@@ -1,4 +1,4 @@
-import { IconLoader2 } from '@tabler/icons';
+import { IconLoader2 } from '@tabler/icons-react';
 import classNames from 'classnames';
 import { ButtonHTMLAttributes } from 'react';
 
