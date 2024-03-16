@@ -40,7 +40,7 @@ export default function Header() {
     <>
       <header
         className={classNames(
-          'z-50 bg-white bg-opacity-70 transition-shadow dark:bg-zinc-900 dark:bg-opacity-90',
+          'z-50  bg-opacity-70 transition-shadow ',
           'fixed w-full backdrop-blur-md',
           'h-16',
           { shadow: isScrolled }
