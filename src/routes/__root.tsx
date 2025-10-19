@@ -1,4 +1,6 @@
 /// <reference types="vite/client" />
+import '@fontsource/monaspace-neon';
+import '@fontsource-variable/nunito';
 
 import { createRootRoute, HeadContent, Outlet, Scripts } from '@tanstack/react-router';
 import type { ReactNode } from 'react';
@@ -22,7 +24,12 @@ export const Route = createRootRoute({
 				name: 'viewport',
 			},
 			{
-				title: 'TanStack Start Starter',
+				title: 'Artun Colak',
+			},
+			{
+				content:
+					'Software engineer with experience in delivering clean, elegant and efficent code.',
+				name: 'description',
 			},
 		],
 	}),

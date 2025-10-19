@@ -12,7 +12,19 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
     tsConfigPaths(),
-    tanstackStart(),
+    tanstackStart({
+      prerender: {
+        enabled: true,
+        autoSubfolderIndex: true,
+        concurrency: 14,
+        crawlLinks: true,
+        retryCount: 2,
+        retryDelay: 1000,
+        onSuccess: ({ page }) => {
+          console.log(`Rendered ${page.path}!`)
+        },
+      },
+    }),
     // react's vite plugin must come after start's vite plugin
     viteReact(),
   ],

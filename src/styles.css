@@ -39,9 +39,9 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-  --font-sans: Outfit, sans-serif;
-  --font-mono: monospace;
-  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: 'Nunito Variable', sans-serif;
+  --font-mono: 'Monaspace Neon', monospace;
+  --font-serif: 'Nunito Variable', sans-serif;
   --radius: 0.5rem;
   --tracking-tighter: calc(var(--tracking-normal) - 0.05em);
   --tracking-tight: calc(var(--tracking-normal) - 0.025em);
@@ -102,9 +102,9 @@
   --sidebar-border: oklch(0.9037 0 0);
   --sidebar-ring: oklch(0.8348 0.1302 160.9080);
   --destructive-foreground: oklch(0.9934 0.0032 17.2118);
-  --font-sans: Outfit, sans-serif;
-  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  --font-mono: monospace;
+  --font-sans: 'Nunito Variable', sans-serif;
+  --font-mono: 'Monaspace Neon', monospace;
+  --font-serif: 'Nunito Variable', sans-serif;
   --shadow-color: #000000;
   --shadow-opacity: 0.17;
   --shadow-blur: 3px;
@@ -158,9 +158,9 @@
   --sidebar-ring: oklch(0.8003 0.1821 151.7110);
   --destructive-foreground: oklch(0.9368 0.0045 34.3092);
   --radius: 0.5rem;
-  --font-sans: Outfit, sans-serif;
-  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  --font-mono: monospace;
+  --font-sans: 'Nunito Variable', sans-serif;
+  --font-mono: 'Monaspace Neon', monospace;
+  --font-serif: 'Nunito Variable', sans-serif;
   --shadow-color: #000000;
   --shadow-opacity: 0.17;
   --shadow-blur: 3px;
