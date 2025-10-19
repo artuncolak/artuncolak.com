@@ -7,56 +7,56 @@ import type { ReactNode } from 'react';
 import appCss from '../styles.css?url';
 
 export const Route = createRootRoute({
-	component: RootComponent,
-	head: () => ({
-		links: [
-			{
-				href: appCss,
-				rel: 'stylesheet',
-			},
-		],
-		meta: [
-			{
-				charSet: 'utf-8',
-			},
-			{
-				content: 'width=device-width, initial-scale=1',
-				name: 'viewport',
-			},
-			{
-				title: 'Artun Colak',
-			},
-			{
-				content:
-					'Software engineer with experience in delivering clean, elegant and efficent code.',
-				name: 'description',
-			},
-		],
-	}),
+  component: RootComponent,
+  head: () => ({
+    links: [
+      {
+        href: appCss,
+        rel: 'stylesheet',
+      },
+    ],
+    meta: [
+      {
+        charSet: 'utf-8',
+      },
+      {
+        content: 'width=device-width, initial-scale=1',
+        name: 'viewport',
+      },
+      {
+        title: 'Artun Colak',
+      },
+      {
+        content:
+          'Software engineer with experience in delivering clean, elegant and efficent code.',
+        name: 'description',
+      },
+    ],
+  }),
 });
 
 function RootComponent() {
-	return (
-		<RootDocument>
-			<Outlet />
-		</RootDocument>
-	);
+  return (
+    <RootDocument>
+      <Outlet />
+    </RootDocument>
+  );
 }
 
 function RootDocument({
-	children,
+  children,
 }: Readonly<{
-	children: ReactNode;
+  children: ReactNode;
 }>) {
-	return (
-		<html className="dark" lang="en">
-			<head>
-				<HeadContent />
-			</head>
-			<body>
-				{children}
-				<Scripts />
-			</body>
-		</html>
-	);
+  return (
+    <html className="dark" lang="en">
+      <head>
+        <HeadContent />
+      </head>
+      <body>
+        {children}
+        <Scripts />
+      </body>
+    </html>
+  );
 }
